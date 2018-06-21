@@ -15,10 +15,6 @@ PRODUCT_DEVICE := gs702a
 PRODUCT_MODEL := Overmax NewBase 2
 PRODUCT_MANUFACTURER := overmax
 PRODUCT_GMS_CLIENTID_BASE := android-overmax
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="full_gs702a-userdebug 8.1 eng.disyer test-keys" \
-    PRODUCT_NAME=gs702a \
-    TARGET_DEVICE=NewBase2
 
 BUILD_FINGERPRINT := Android/full_gs702a/gs702a:4.1.1/JRO03C/eng.zhouzf.20130720.141654:userdebug/test-keys
 TARGET_SCREEN_HEIGHT := 800

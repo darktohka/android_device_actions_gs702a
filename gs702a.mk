@@ -349,3 +349,4 @@ PRODUCT_AAPT_PREF_CONFIG := xlarge
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_TAGS += dalvik.gc.type-precise
+$(call inherit-product, vendor/actions/gs702a/gs702a-vendor-blobs.mk)

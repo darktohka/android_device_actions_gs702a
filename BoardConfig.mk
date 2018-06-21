@@ -32,7 +32,7 @@ ARCH_ARM_HAVE_32_BYTE_CACHE_LINES := true
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Use the non-open-source parts, if they're present
--include vendor/actions/gs702a/gs702a-vendor-blobs.mk
+-include vendor/actions/gs702a/BoardConfigVendor.mk
 
 BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
