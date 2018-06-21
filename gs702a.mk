@@ -36,7 +36,6 @@ PRODUCT_COPY_FILES := \
 	device/actions/gs702a/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
 	device/actions/gs702a/packages-compat-default.xml:system/etc/packages-compat-default.xml \
 	device/actions/gs702a/builtinapk:system/etc/builtinapk \
-	device/actions/gs702a/NOTICE.html:system/etc/NOTICE.html \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/extras/android.hardware.bluetooth.xml \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/extras/android.hardware.location.gps.xml \
 	frameworks/native/data/etc/android.hardware.sensor.compass.xml:/system/etc/permissions/extras/android.hardware.sensor.compass.xml \
@@ -47,7 +46,7 @@ PRODUCT_COPY_FILES := \
 # audio policy configuration
 PRODUCT_COPY_FILES += \
 	hardware/libhardware_legacy/audio/audio_policy.conf:/system/etc/audio_policy.conf
-	
+
 # FIXME init.rc doesn't run mkdir for system/vendor/app, so we use do this here using a dummy file
 PRODUCT_COPY_FILES += \
 	device/actions/gs702a/readme:system/vendor/app/readme
@@ -59,7 +58,7 @@ PRODUCT_PACKAGES := \
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=adb,mass_storage
-	
+
 PRODUCT_PROPERTY_OVERRIDES := \
 	hwui.render_dirty_regions=false
 
@@ -97,7 +96,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	actions \
 	pfmnceserver \
-	libperformance \
 	libactions_runtime \
 	usbmond \
 	charger \
@@ -115,7 +113,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	dosfslabel	
-	
+
 PRODUCT_PACKAGES += \
 	rild \
 	libactions-ril \
@@ -125,17 +123,12 @@ PRODUCT_PACKAGES += \
 	libusb-compat
 
 PRODUCT_PACKAGES += \
-	AdobeFlashPlayer.apk \
-	libflashplayer.so \
-	libstagefright_froyo.so \
-	libstagefright_honeycomb.so \
 	libysshared.so \
 	libffmpeg_wrapper \
 	libPopupVideo \
 	libvinit \
 	performancepolicy \
 	ActSensorCalib \
-	DLNA.apk 
 
 PRODUCT_PACKAGES += \
 	init.superuser.rc
@@ -150,7 +143,7 @@ PRODUCT_PACKAGES += \
 	game_r2 \
 	game_r3 \
 	libGLESv2_VIVANTE.so
-	
+
 PRODUCT_PACKAGES += \
 	libsub \
 	libbmp \
@@ -302,7 +295,7 @@ PRODUCT_PACKAGES += \
 	wpa_cli \
 	libwpa_client \
 	wpa_supplicant
-endif	
+endif
 
 ifeq ($(strip $(BOARD_WIFI_VENDOR)), broadcom)
 PRODUCT_PACKAGES += \
@@ -323,7 +316,7 @@ PRODUCT_PACKAGES += \
 	nrx600-softap.fw \
 	wlan_loader \
 	lib_nano_cmd_nrx
-endif	
+endif
 
 ifeq ($(BOARD_WIFI_VENDOR), realtek)
 
@@ -336,7 +329,7 @@ PRODUCT_PACKAGES += \
 	wpa_cli \
 	libwpa_client \
 	wpa_supplicant
-endif	
+endif
 
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, build/target/product/full_base.mk)
@@ -345,10 +338,10 @@ PRODUCT_NAME := full_gs702a
 PRODUCT_DEVICE := gs702a
 PRODUCT_BRAND := overmax
 PRODUCT_MANUFACTURER := Overmax
-PRODUCT_MODEL := NewBase2
+PRODUCT_MODEL := NewBase 2
 
 TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 1280
+TARGET_SCREEN_WIDTH := 480
 
 PRODUCT_AAPT_CONFIG += large xlarge mdpi hdpi tvdpi
 PRODUCT_AAPT_PREF_CONFIG := xlarge

@@ -25,6 +25,6 @@ $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-he
 # Set variables here to overwrite the inherited values.
 PRODUCT_NAME := full_gs702a
 PRODUCT_DEVICE := gs702a
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := Novo 10 Hero QuadCore
-PRODUCT_MANUFACTURER := ainol
+PRODUCT_BRAND := Overmax
+PRODUCT_MODEL := NewBase 2
+PRODUCT_MANUFACTURER := overmax
