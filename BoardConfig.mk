@@ -76,7 +76,7 @@ TARGET_PROVIDES_INIT_RC := true
 TARGET_GCC_VERSION := 4.7
 TARGET_TOOLS_PREFIX :=
 TARGET_GLOBAL_CFLAGS += -fno-exceptions -Wno-multichar -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -fno-canonical-system-headers -fno-builtin-sin -fno-strict-volatile-bitfields -DNDEBUG -g -Wstrict-aliasing=2 -fgcse-after-reload -frerun-cse-after-loop -frename-registers -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -fdiagnostics-color -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -mthumb-interwork -msoft-float -mfloat-abi=softfp -mfpu=neon -march=armv7-a
-TARGET_GLOBAL_CPPFLAGS += -fno-exceptions -Wno-multichar -ffunction-sections -fdata-sections -funwind-tables -fstack-protector-strong -Wa,--noexecstack -Werror=format-security -D_FORTIFY_SOURCE=2 -fno-short-enums -no-canonical-prefixes -fno-canonical-system-headers -fno-builtin-sin -fno-strict-volatile-bitfields -DNDEBUG -g -Wstrict-aliasing=2 -fgcse-after-reload -frerun-cse-after-loop -frename-registers -DANDROID -fmessage-length=0 -W -Wall -Wno-unused -Winit-self -Wpointer-arith -DNDEBUG -UDEBUG -fdebug-prefix-map=/proc/self/cwd= -fdiagnostics-color -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=date-time -mthumb-interwork -msoft-float -mfloat-abi=softfp -mfpu=neon -march=armv7-a
+TARGET_GLOBAL_CPPFLAGS += -Wsign-promo -fvisibility-inlines-hidden
 
 #Recovery
 TARGET_RECOVERY_INITRC := device/actions/gs702a/init.recovery.gs702a.rc
