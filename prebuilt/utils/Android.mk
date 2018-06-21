@@ -184,7 +184,6 @@ include $(BUILD_PREBUILT)
 endif
 
 #prebuilt libperformance 
-ifneq ($(words $(shell find device/actions/gs702a/performancemanager/performanceservice/Android.mk)),1)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libperformance
 LOCAL_SRC_FILES := $(LOCAL_MODULE).so
@@ -192,12 +191,8 @@ LOCAL_MODULE_STEM:= $(LOCAL_MODULE).so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 include $(BUILD_PREBUILT)
-#else
-#utils_prebuilt_target += $(TARGET_OUT)/lib/libperformance.so
-endif
 
 #prebuilt performancepolicy 
-ifneq ($(words $(shell find device/actions/gs702a/performancemanager/performancepolicy/Android.mk)),1)
 include $(CLEAR_VARS)
 LOCAL_MODULE := performancepolicy
 LOCAL_MODULE_STEM := performancepolicy.apk
@@ -206,12 +201,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
-#else
-#utils_prebuilt_target += $(TARGET_OUT)/app/performancepolicy.apk
-endif
 
-#prebuilt performancepolicy 
-ifneq ($(words $(shell find device/actions/gs702a/packages/ActSensorCalib/Android.mk)),1)
 include $(CLEAR_VARS)
 LOCAL_MODULE := ActSensorCalib
 LOCAL_MODULE_STEM := ActSensorCalib.apk
@@ -220,6 +210,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS :=APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
-#else
-#utils_prebuilt_target += $(TARGET_OUT)/app/ActSensorCalib.apk
-endif
