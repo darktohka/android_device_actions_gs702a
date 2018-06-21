@@ -44,6 +44,7 @@ TARGET_NO_RADIOIMAGE := true
 
 TARGET_PREBUILT_KERNEL := device/actions/gs702a/kernel
 #TARGET_KERNEL_CONFIG := leopard_evb_defconfig
+BOARD_KERNEL_IMAGE_NAME := kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyS5,115200 earlyprintk
 BOARD_PAGE_SIZE := 2048
