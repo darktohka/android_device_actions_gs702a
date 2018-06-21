@@ -171,7 +171,7 @@ include $(BUILD_PREBUILT)
 #endif
 
 #prebuilt libhwc 
-ifneq ($(words $(shell find device/actions/gs702a/hardware/libhwc/libhwc/Android.mk)),1)
+ifneq ($(words $(shell find device/actions/gs702a/hardware/libhwc/Android.mk)),1)
 include $(CLEAR_VARS)
 LOCAL_MODULE := hwcomposer.$(TARGET_BOARD_PLATFORM)
 LOCAL_SRC_FILES := $(LOCAL_MODULE).so
