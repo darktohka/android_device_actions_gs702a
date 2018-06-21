@@ -89,9 +89,6 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 #BOARD_WLAN_VENDOR := REALTEK
 BOARD_WIFI_VENDOR := realtek
-BOARD_WLAN_DEVICE := rtl8192cu
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
-BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_rtl
 
 TARGET_CUSTOM_WIFI := device/actions/gs702a/wifi/wifi.c
 -include device/actions/gs702a/wifi.mk

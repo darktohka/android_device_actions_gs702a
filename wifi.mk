@@ -32,9 +32,9 @@ else ifeq ($(strip $(BOARD_WIFI_VENDOR)), realtek)
 WPA_SUPPLICANT_VERSION 				:= VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER 		:= NL80211
 CONFIG_DRIVER_WEXT 					:= y
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_rtl
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_rtl
 BOARD_HOSTAPD_DRIVER        		:= NL80211
-BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_rtl
+#BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_rtl
 BOARD_WLAN_DEVICE := rtl8192cu
 #BOARD_WLAN_DEVICE := rtl8192du
 #BOARD_WLAN_DEVICE := rtl8192ce
@@ -63,9 +63,9 @@ else ifeq ($(strip $(BOARD_WIFI_VENDOR)), rtl8723as_vt)
 WPA_SUPPLICANT_VERSION 				:= VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER 		:= NL80211
 CONFIG_DRIVER_WEXT 					:= y
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_rtl
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_rtl
 BOARD_HOSTAPD_DRIVER        		:= NL80211
-BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_rtl
+#BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_rtl
 #BOARD_WLAN_DEVICE := rtl8192cu
 #BOARD_WLAN_DEVICE := rtl8192du
 #BOARD_WLAN_DEVICE := rtl8192ce
@@ -136,9 +136,9 @@ else ifeq ($(strip $(BOARD_WIFI_VENDOR)), broadcom)
 
 BOARD_WPA_SUPPLICANT_DRIVER 		:= NL80211
 WPA_SUPPLICANT_VERSION      		:= VER_0_8_X
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_bcmdhd
+#BOARD_WPA_SUPPLICANT_PRIVATE_LIB 	:= lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER        		:= NL80211
-BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_bcmdhd
+#BOARD_HOSTAPD_PRIVATE_LIB   		:= lib_driver_cmd_bcmdhd
 BOARD_WLAN_DEVICE           		:= ap6210
 BOARD_WLAN_DEVICE_REV       		:= ap6210
 WIFI_DRIVER_FW_PATH_PARAM   		:= "/sys/module/wlan_bcmdhd/parameters/firmware_path"
