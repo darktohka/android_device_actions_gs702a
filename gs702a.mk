@@ -341,7 +341,7 @@ endif
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, build/target/product/full_base.mk)
 
-PRODUCT_NAME := lineage_gs702a
+PRODUCT_NAME := full_gs702a
 PRODUCT_DEVICE := gs702a
 PRODUCT_BRAND := overmax
 PRODUCT_MANUFACTURER := Overmax
