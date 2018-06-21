@@ -22,5 +22,3 @@
 
 add_lunch_combo lineage_gs702a-userdebug
 add_lunch_combo lineage_gs702a-eng
-add_lunch_combo full_gs702a-userdebug
-add_lunch_combo full_gs702a-eng

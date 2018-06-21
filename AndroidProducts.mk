@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/full_gs702a.mk
+	$(LOCAL_DIR)/gs702a.mk

@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/actions/gs702a/full_gs702a.mk)
+$(call inherit-product, device/actions/gs702a/gs702a.mk)
 
 # Inherit GSM common stuff
 PRODUCT_COPY_FILES += \
