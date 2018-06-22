@@ -36,6 +36,7 @@ public:
 	~DisplayParameters();
 	String8 flatten() const;
 	void unflatten(const String8 &params);
+        void unflatten_chars(const char *a);
 	void set(const char *key, const char *value);
 	void setInt(const char *key, int value);
 	void setFloat(const char *key, float value);
