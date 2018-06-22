@@ -3,6 +3,7 @@
 #include <linux/fb.h>
 #include <linux/kdev_t.h>
 #include <linux/major.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
 #include <unistd.h>
