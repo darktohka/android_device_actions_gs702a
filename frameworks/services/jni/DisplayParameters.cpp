@@ -78,6 +78,10 @@ String8 DisplayParameters::flatten() const {
 
 void DisplayParameters::unflatten(const String8 &params) {
 	const char *a = params.string();
+	unflatten_chars(a);
+}
+
+void DisplayParameters::unflatten_chars(const char *a) {
 	const char *b;
 
 	mMap.clear();

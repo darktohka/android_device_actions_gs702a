@@ -589,15 +589,11 @@ static jboolean actions_server_DisplayService_setDisplayerParam(JNIEnv *env,
 	if (dedevice == 0) {
 		return false;
 	}
-	const jchar* str = env->GetStringCritical(params, 0);
-	String8 params8;
 
-	if (params) {
-		params8 = String8(str, env->GetStringLength(params));
-		env->ReleaseStringCritical(params, str);
-	}
+	const char* str = (*env)->GetStringUTFChars(env, params, 0);
+	disParam.unflatten_chars(str);
+	(*env)->ReleaseStringUTFChars(env, params, str);
 
-	disParam.unflatten(params8);
 	// loop all option : 1. format
 	if ((valuestr = disParam.get(DisplayParameters::KEY_FORMAT)) != 0) {
 		//todo: try loop  displayers !!!
