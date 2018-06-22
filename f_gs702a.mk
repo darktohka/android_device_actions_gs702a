@@ -83,9 +83,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.supplicant_scan_interval=120 \
 	wifi.interface=wlan0
 
-DEVICE_PACKAGE_OVERLAYS := \
-    device/actions/gs702a/overlay
-
 PRODUCT_PACKAGES += \
 	e2fsck
 
@@ -334,8 +331,8 @@ endif
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-PRODUCT_AAPT_CONFIG += large xlarge mdpi hdpi tvdpi
-PRODUCT_AAPT_PREF_CONFIG := xlarge
+PRODUCT_AAPT_CONFIG += xhdpi mdpi hdpi tvdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_CHARACTERISTICS := tablet
 
