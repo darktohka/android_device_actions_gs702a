@@ -23,7 +23,7 @@
 #define CHECKSUM_CONFIRM_FLAG_FILE "/configfs/checksumflag.bin"
 
 #define CHECKSUM_DISKB_FILE "/sys/block/actb/checksum"
-#define CHECKSUM_DISKC_FILE "/sys/block/actj2/checksum"
+#define CHECKSUM_DISKC_FILE "/sys/block/actc/checksum"
 #define CHECKSUM_DISKD_FILE "/sys/block/actd/checksum"
 #define CHECKSUM_DISKF_FILE "/sys/block/actf/checksum"
 #define CHECKSUM_DISKH_FILE "/sys/block/acth/checksum"
@@ -37,7 +37,7 @@
 #define OTHERS_DEVS_CKRESULT_PATH "/configfs/checksum_result.bin"
 
 #define DEVB_PATH "/dev/actb"
-#define DEVC_PATH "/dev/actj2"
+#define DEVC_PATH "/dev/actc"
 
 #define DEVD_PATH "/dev/actd"
 #define DEVE_PATH "/dev/acte"
@@ -292,7 +292,7 @@ int CheckAndRecoveryRootfs(void)
 			return -1;
 		} else {
 			PRINT_DBG(DBL_WARNING, "Check Passed! Enter Recovery mod ...\n");
-			sprintf(ck2rec_cmd, "dd if=/dev/actj2 of=/dev/actb bs=1M count=%d",
+			sprintf(ck2rec_cmd, "dd if=/dev/actc of=/dev/actb bs=1M count=%d",
 					partition_info_from_nand[sysfs_begin_item].partition_cap);
 			PRINT_DBG(DBL_WARNING, "ck2rec_cmd: %s\n", ck2rec_cmd);
 			system(ck2rec_cmd);

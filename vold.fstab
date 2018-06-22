@@ -24,6 +24,6 @@
 # dev_mount sdcard /sdcard 2 /devices/platform/goldfish_mmc.0 /devices/platform/msm_sdcc.2/mmc_host/mmc1
 
 ## For gs702a: mounts three partition
-dev_mount flash /storage/sdcard0 auto /dev/block/actj1
+dev_mount flash /storage/sdcard0 auto /devices/virtual/block/actj
 dev_mount sdcard /storage/sdcard1 auto /devices/platform/asoc-mmc0.0/mmc_host/mmc0
 dev_mount uhost /storage/usbdisk auto /devices/platform/actions-dwc3.1/dwc3.0/xhci-hcd
