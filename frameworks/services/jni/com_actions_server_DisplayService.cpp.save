@@ -590,9 +590,9 @@ static jboolean actions_server_DisplayService_setDisplayerParam(JNIEnv *env,
 		return false;
 	}
 
-	const char* str = (*env).GetStringUTFChars(params, NULL);
+	const char* str = (*env).GetStringUTFChars(env, params);
 	disParam.unflatten_chars(str);
-	(*env).ReleaseStringUTFChars(params, str);
+	(*env).ReleaseStringUTFChars(env, params);
 
 	// loop all option : 1. format
 	if ((valuestr = disParam.get(DisplayParameters::KEY_FORMAT)) != 0) {

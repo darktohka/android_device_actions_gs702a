@@ -37,6 +37,8 @@ LOCAL_SRC_FILES:= \
 	DisplayParameters.cpp \
 	onload.cpp
 
+LOCAL_LDLIBS := -llog
+
 # All of the shared libraries we link against.
 LOCAL_SHARED_LIBRARIES := \
 	libandroid_runtime \
