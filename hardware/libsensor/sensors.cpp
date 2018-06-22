@@ -82,7 +82,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (4.0f * GRAVITY_EARTH), 
           (4.0f * GRAVITY_EARTH) / 64.0f,     // -2G ~ +2G, 6 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"bma220" }    // reserved[0] --> input device name
         }, 
         { 
@@ -92,7 +93,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (4.0f * GRAVITY_EARTH), 
           (4.0f * GRAVITY_EARTH) / 256.0f,     // -2G ~ +2G, 8 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"bma222" }    // reserved[0] --> input device name
         },
         { 
@@ -102,7 +104,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (4.0f * GRAVITY_EARTH), 
           (4.0f * GRAVITY_EARTH) / 1024.0f,     // -2G ~ +2G, 10 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"bma250" }    // reserved[0] --> input device name
         },
         { 
@@ -112,7 +115,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (3.0f * GRAVITY_EARTH), 
           (3.0f * GRAVITY_EARTH) / 64.0f,     // -1.5G ~ +1.5G, 6 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mma7660" }    // reserved[0] --> input device name
         },
         { 
@@ -122,7 +126,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (4.0f * GRAVITY_EARTH), 
           (4.0f * GRAVITY_EARTH) / 4096.0f,     // -2G ~ +2G, 12 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mma8452" }    // reserved[0] --> input device name
         },
         { 
@@ -132,7 +137,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (8.0f * GRAVITY_EARTH), 
           (8.0f * GRAVITY_EARTH) / 1024.0f,     // -4G ~ +4G, 10 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"dmard10" }    // reserved[0] --> input device name
         },
         { 
@@ -142,7 +148,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (3.0f * GRAVITY_EARTH), 
           (3.0f * GRAVITY_EARTH) / 256.0f,    // -1.5G ~ +1.5G, 8 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mc3230" }    // reserved[0] --> input device name
         },
         { 
@@ -152,7 +159,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_ACCELEROMETER, 
           (16.0f * GRAVITY_EARTH), 
           (16.0f * GRAVITY_EARTH) / 16384.0f,    // -8G ~ +8G, 14 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mc3210" }    // reserved[0] --> input device name
         },
         { 
@@ -162,7 +170,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_LIGHT, 
           64000.0f,     // 2 ~ 64k
           1.0f,
-          0.20f, 500, 
+          0.20f, 500, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"ltr301" }    // reserved[0] --> input device name
         },
         { 
@@ -172,7 +181,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_MAGNETIC_FIELD, 
           400.0f,           // -200uT ~ +200uT
           1.0f / 80.0f,    // 80 LSB/uT
-          0.5f, 10, 
+          0.5f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mc6420" }    // reserved[0] --> input device name
         },	
         { 
@@ -182,7 +192,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_GYROSCOPE, 
           (4000.0f*(float)M_PI/180.0f),         // -2000dps ~ +2000dps
           ((70.0f / 1000.0f) * ((float)M_PI / 180.0f)),    // 70 mdps/LSB
-          6.1f, 10, 
+          6.1f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"l3g4200d" }    // reserved[0] --> input device name
         },
         { 
@@ -192,7 +203,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_GYROSCOPE, 
           (4000.0f*(float)M_PI/180.0f),         // -2000dps ~ +2000dps
           ((1.0f / 16.4f) * ((float)M_PI / 180.0f)),    // 1/16.4 dps/LSB
-          6.1f, 10, 
+          6.1f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"mpu3050c" }    // reserved[0] --> input device name
         },
         { 
@@ -202,7 +214,8 @@ static const struct sensor_t sSensorSupportList[] = {
           SENSOR_TYPE_TEMPERATURE, 
           128.0f,        // -40 ~ +87.5 centigrade
           0.5f,     // 0.5 centigrade/LSB, 8 bit
-          0.20f, 10, 
+          0.20f, 10, 0,0,
+          NULL, NULL, 0, 0,
           { (void*)"bma250t" }    // reserved[0] --> input device name
         },
 };
