@@ -15,6 +15,7 @@
  */
 
 #define LOG_TAG "lights"
+#define BRIGHTNESS_ON 255
 
 #include <cutils/log.h>
 
