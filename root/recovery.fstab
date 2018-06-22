@@ -1,8 +1,8 @@
 # mount point	fstype		device
 
-/emmc		vfat		/dev/block/actj
+/emmc		vfat		/dev/block/actj1
 /data_bak		vfat		/dev/block/actf
-/system		ext4		/dev/block/actc
+/system		ext4		/dev/block/actj2
 /cache		ext4		/dev/block/acte
 /data		ext4		/dev/block/actd
 /boot		vfat		/dev/block/actb

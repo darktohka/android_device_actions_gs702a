@@ -50,7 +50,7 @@
 
 #define WHDBIN_FILE		"/firmware/whd_test.bin"
 #define WHDDEV_PATH		"/dev/actb"
-#define VMLINUXDEV_PATH		"/dev/actc"
+#define VMLINUXDEV_PATH		"/dev/actj2"
 
 #define ROOTFS_FILE		"/firmware/rtfs_image.bin"
 #define OTHERS1_FILE		"/firmware/others1_img.bin"

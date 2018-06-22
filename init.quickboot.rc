@@ -18,7 +18,7 @@ on fs
     mkdir /misc
    
     mount vfat /dev/block/actb /misc ro wait noatime nodiratime umask=0022
-    mount ext4 /dev/block/actc /system ro wait noatime nodiratime nosuid nodev noauto_da_alloc
+    mount ext4 /dev/block/actj2 /system ro wait noatime nodiratime nosuid nodev noauto_da_alloc
 
 on init
 
