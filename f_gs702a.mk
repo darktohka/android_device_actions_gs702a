@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES := \
 	device/actions/gs702a/vold.sdboot.fstab:system/etc/vold.sdboot.fstab \
 	device/actions/gs702a/excluded-input-devices.xml:system/etc/excluded-input-devices.xml \
 	device/actions/gs702a/packages-compat-default.xml:system/etc/packages-compat-default.xml \
-	device/actions/gs702a/builtinapk:system/etc/builtinapk \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/extras/android.hardware.bluetooth.xml \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/extras/android.hardware.location.gps.xml \
 	frameworks/native/data/etc/android.hardware.sensor.compass.xml:/system/etc/permissions/extras/android.hardware.sensor.compass.xml \
